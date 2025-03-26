@@ -230,5 +230,11 @@ class BiliBiliLogin:
 
 
 if __name__ == '__main__':
-    bilibili = BiliBiliLogin()
-    bilibili.login()
+    # bilibili = BiliBiliLogin()
+    # bilibili.login()
+
+    with open('image/captcha.png', 'rb') as f:
+        content = f.read()
+    cap = TextSelectCaptcha()
+    codes = cap.run(content)
+    print(codes)

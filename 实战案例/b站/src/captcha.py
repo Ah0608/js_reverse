@@ -8,8 +8,8 @@
 # version    ：python 3.6
 # Description：
 """
-from src.method import jy_click
-from src.utils.utils import drow_img
+from ..src.utils.utils import drow_img
+from ..src.method import jy_click
 
 
 class TextSelectCaptcha(object):

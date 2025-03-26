@@ -17,7 +17,7 @@ class JYClick(object):
         yolo_path = path(save_path, yolo_path)
         if sign:
             try:
-                from src.utils.load import decryption
+                from 日常练习.实战案例.b站.src.utils.load import decryption
             except:
                 raise Exception("Error! 请在windows下的python3.6、3.8、3.10环境下使用")
             yolo_path = decryption(yolo_path)
